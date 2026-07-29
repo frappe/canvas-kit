@@ -9,6 +9,7 @@ export { default as ContextMenu } from "./components/ContextMenu.vue";
 export { default as CursorTooltip } from "./components/CursorTooltip.vue";
 export { default as DraggablePopup } from "./components/DraggablePopup.vue";
 export { default as DropIndicator } from "./components/DropIndicator.vue";
+export { default as EditableSpan } from "./components/EditableSpan.vue";
 export { default as InlineInput } from "./components/InlineInput.vue";
 export { default as Input } from "./components/Input.vue";
 export { default as InputLabel } from "./components/InputLabel.vue";
@@ -17,6 +18,8 @@ export { default as MiddleTruncate } from "./components/MiddleTruncate.vue";
 export { default as NumberArrows } from "./components/NumberArrows.vue";
 export { default as OptionToggle } from "./components/OptionToggle.vue";
 export { default as PaddingHandler } from "./components/PaddingHandler.vue";
+export { default as PanelResizer } from "./components/PanelResizer.vue";
+export { default as PropertyLabel } from "./components/PropertyLabel.vue";
 export { default as RangeInput } from "./components/RangeInput.vue";
 export { default as TabButtons } from "./components/TabButtons.vue";
 
