@@ -31,6 +31,7 @@ export {
 	clusterLines,
 	collectChildRects,
 	computeDropIndicator,
+	computeReadingOrderIndex,
 	getLayoutDirection,
 } from "./utils/dropGeometry";
 export type { ChildRect, IndicatorGeometry, IndicatorOrientation, LayoutDirection } from "./utils/dropGeometry";
