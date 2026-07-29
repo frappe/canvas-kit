@@ -1,8 +1,8 @@
 # Canvas Kit
 
-Shared Vue components for building visual canvas editors, extracted from [Frappe Builder](https://github.com/frappe/builder) and [Frappe Studio](https://github.com/frappe/studio).
+Vue components for building visual canvas editors.
 
-Like [frappe-ui](https://github.com/frappe/frappe-ui), this package ships raw `.vue`/`.ts` source. Your app's bundler compiles it, so no build step or published dist.
+Ships raw `.vue`/`.ts` source, your bundler compiles it.
 
 ## Installation
 
@@ -10,44 +10,29 @@ Like [frappe-ui](https://github.com/frappe/frappe-ui), this package ships raw `.
 npm install frappe-canvas-kit
 ```
 
-Peer dependencies: `vue`, `frappe-ui`, `@vueuse/core`. Styling uses frappe-ui's Tailwind design tokens, so your Tailwind config must include this package in its `content` globs:
+Requires `vue`, `frappe-ui`, `@vueuse/core`, and `reka-ui` as peers. Include the package in your Tailwind `content` globs:
 
 ```js
 content: ["./node_modules/frappe-canvas-kit/src/**/*.{vue,ts}"],
 ```
 
+Icon classes like `lucide-x` need frappe-ui's vite plugin with `lucideIcons: true`.
+
 ## Usage
 
 ```vue
 <script setup>
-import { CollapsibleSection } from "frappe-canvas-kit";
+import { InlineInput } from "frappe-canvas-kit";
 </script>
 
 <template>
-	<CollapsibleSection section-name="Layout">
-		<!-- controls -->
-	</CollapsibleSection>
+	<InlineInput label="Height" :model-value="height" :unit-options="['px', '%']" />
 </template>
 ```
 
 ## Components
 
-- `CollapsibleSection`
-
-## Extraction roadmap
-
-Components duplicated across Builder and Studio, to be moved here:
-
-- `BoxResizer`
-- `BlockFlexLayoutHandler`
-- `BlockGridLayoutHandler`
-- `BlockPositionHandler`
-- `MarginHandler` / `PaddingHandler`
-- `DimensionInput`
-- `ColorInput` / `ColorPicker`
-- `InlineInput`
-- `ContextMenu`
-- `ArrayInput`
+`AnglePicker`, `ArrayEditor`, `ArrayInput`, `Autocomplete`, `CollapsibleSection`, `ContextMenu`, `InlineInput`, `Input`, `InputLabel`, `MiddleTruncate`, `NumberArrows`, `OptionToggle`, `RangeInput`, `TabButtons`
 
 ## License
 
